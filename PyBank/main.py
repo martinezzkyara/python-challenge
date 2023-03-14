@@ -73,4 +73,8 @@ print(average_change_statement)
 print(max_statement)
 print(min_statement)
 
+# write results to a file 
+newline_symbol='\n'
+with open('analysis/results.txt','w') as fw:
+    fw.writelines([line1+newline_symbol,line2+newline_symbol,total_month_statement+newline_symbol,net_total_statement+newline_symbol,average_change_statement+newline_symbol,max_statement+newline_symbol,min_statement+newline_symbol])
 
